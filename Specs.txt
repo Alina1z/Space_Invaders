@@ -1,0 +1,16 @@
+Replace:
+Title- College Invader
+Title screen background- building entrance
+Background- classroom
+
+Menu:
+Play- start an attempt
+High score- shows the highest score ever achieved
+
+Mothership- Trustees (explodes into a bloody mess when shot)
+Enemies- Deans and Administration (4, one for each row)
+Enemies projectile- paperwork (moves slower than player's projectile)
+
+Player- student or teacher
+Barrier- tables filled over piled together
+Player projectile- books
