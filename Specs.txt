@@ -9,8 +9,8 @@ High score- shows the highest score ever achieved
 
 Mothership- Trustees (explodes into a bloody mess when shot)
 Enemies- Deans and Administration (4, one for each row)
-Enemies projectile- paperwork (moves slower than player's projectile)
+Enemies projectile- pencil (moves slower than player's projectile)
 
 Player- student or teacher
-Barrier- tables filled over piled together
+Barrier- tables filled over piled together or just one table
 Player projectile- books
