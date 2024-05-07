@@ -1,0 +1,38 @@
+﻿First Meeting: 2/08/2024
+* Introductions
+* Brainstorming on how to represent the students/teachers and the donors 
+   * Decided on using symbols to represent them
+* Decided on an artstyle 
+
+Second Meeting: 2/13/2024
+   * Decided on a pixel artstyle
+   * We all tried different programs
+   * Decided to use pixelart.com for all the art and for saving everything as a png
+
+
+Third Meeting: 2/29/2024
+   * Created an outline for the project
+   * “Since the backbone has to make the alien variables, and player variables, I believe we just include it in the variable or at least reference the image.” 
+   * We can also have an “explosion” png for aliens that get eliminated
+   * “Add the background png which should exist for the entirety of the game. We can also do some graphics for points in a 000000 format and 3 hearts/lives. And maybe the title screen but that's just extra.”
+   * Did research on the original game 
+   * Found references for the faces and symbols
+   * Decided on the quantity on alien types and how to design them 
+   * Decided on how to design the alien ship 
+
+
+Fourth Meeting: 3/31/24
+   * Brainstorming of the design of the title and cover screens (library and classroom)
+
+
+Fifth Meeting: 4/18/2024
+   * Check up on what graphics are left to draw
+   * 4th alien, the title screen, and the projectiles
+
+Sixth Meeting: 4/20/2024
+   * Creation of title screen
+
+
+Seventh Meeting: 5/6/2024
+   * Check in and doing final arts
+   * Uploaded all art and documentation to the repository
