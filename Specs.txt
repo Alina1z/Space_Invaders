@@ -1,16 +1,37 @@
-Replace:
-Title- College Invader
-Title screen background- building entrance
-Background- classroom
+Overview:
+The purpose for this document is to give a concise detail about the interworking of "College Invaders" for both developers and users.
 
-Menu:
-Play- start an attempt
-High score- shows the highest score ever achieved
+1. How to read?
+2. Concept
+3.* Controls
+4.* Graphics
 
-Mothership- Trustees (explodes into a bloody mess when shot)
-Enemies- Deans and Administration (4, one for each row)
-Enemies projectile- pencil (moves slower than player's projectile)
+1: How to read?
+To read this documentation look for the number and tag. The tag is the topic that is discussed under the number. Look for the number below the given list and below it will contain all relevant information regarding the topic. For users look for the "*" symbol besides the number that will indicate a suggested topic.
 
-Player- student or teacher
-Barrier- tables filled over piled together or just one table
-Player projectile- books
+
+2: Concept
+Space invaders remastered as "College Invaders" with students and faculty as defenders, administration and deans as regular aliens, and trustees as the UFO. The player should be able to shoot a book that when it hits a trustee makes them explode. The blood should not reset after every set of aliens. 
+
+
+3:* Controls
+Shoot- spacebar, the player icon will shoot a projectile from the middle of the icon directly forwards until it hits a alien, UFO, or the edge of the screen
+Move left- left arrow key, the player icon will shift left
+Move right- right arrow key, the player icon will shift right
+
+
+4:* Graphics
+Refer to the images folder to see the icons
+
+Title screen- pixel-gif-drawing-2.gif
+Play background- coverClassroom.png
+
+UFO- invader.png
+Alien- pixel-frame-0-9.png
+Alien cyan- pixel-frame-0-4.png
+Alien magenta- Math.png
+Alien yellow- flask-face-pixilart.png
+Alien projectile- pencil-projectile-pixilart.png
+
+Player- spaceship.png
+Player projectile- DiplomaProjectile.png
