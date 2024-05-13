@@ -8,6 +8,14 @@ let boardWidth = tileSize * columns; // 32 * 16
 let boardHeight = tileSize * rows; // 32 * 16
 let context;
 
+//sounds preloading
+var shootSound = new Audio("soundFX/shoot.wav");
+var invaderKilledSound = new Audio("soundFX/invaderkilled.wav")
+invaderKilledSound.volume = 0.4;
+
+//life system
+let lives = 3;
+
 //ship
 let shipWidth = tileSize*2;
 let shipHeight = tileSize;
@@ -50,7 +58,7 @@ window.onload = function() {
     board.height = boardHeight;
     context = board.getContext("2d"); //used for drawing on the board
 
-    //draw initial ship
+    // draw initial ship
     // context.fillStyle="green";
     // context.fillRect(ship.x, ship.y, ship.width, ship.height);
 
@@ -64,6 +72,15 @@ window.onload = function() {
     alienImg = new Image();
     alienImg.src = "./alien.png";
     createAliens();
+
+    var heartsImage = new Image();
+    heartsImage.src = "images/hearts.png"; // URL of the hearts image
+    heartsImage.onload = function() {
+        var livesContainer = document.getElementById('lives');
+        livesContainer.appendChild(heartsImage);
+    };
+    
+    
 
     requestAnimationFrame(update);
     document.addEventListener("keydown", moveShip);
@@ -101,6 +118,19 @@ function update() {
             context.drawImage(alienImg, alien.x, alien.y, alien.width, alien.height);
 
             if (alien.y >= ship.y) {
+
+                // Check the value of the lives variable
+            if (lives === 0) {
+                // Execute code if lives is equal to 0
+                // For example:
+                gameOver = true;
+            } else {
+                // Execute code if lives is not equal to 0
+                // For example:
+                lives -= 1;
+}
+
+
                 gameOver = true;
             }
         }
@@ -114,9 +144,12 @@ function update() {
         context.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
 
         //bullet collision with aliens
+        
         for (let j = 0; j < alienArray.length; j++) {
             let alien = alienArray[j];
+            
             if (!bullet.used && alien.alive && detectCollision(bullet, alien)) {
+                invaderKilledSound.play();
                 bullet.used = true;
                 alien.alive = false;
                 alienCount--;
@@ -153,6 +186,28 @@ function update() {
     context.fillText(score, 5, 20);
 }
 
+
+// Function to update display of lives
+function updateLivesDisplay() {
+    // Remove previous heart classes
+    document.getElementById('lives').className = '';
+
+    // Add appropriate heart class based on remaining lives
+    switch (lives) {
+        case 1:
+            document.getElementById('lives').classList.add('heart-1');
+            break;
+        case 2:
+            document.getElementById('lives').classList.add('heart-2');
+            break;
+        case 3:
+            document.getElementById('lives').classList.add('heart-3');
+            break;
+        default:
+            break;
+    }
+}
+
 function moveShip(e) {
     if (gameOver) {
         return;
@@ -187,9 +242,10 @@ function shoot(e) {
     if (gameOver) {
         return;
     }
-
+    
     if (e.code == "Space") {
         //shoot
+        shootSound.play();
         let bullet = {
             x : ship.x + shipWidth*15/32,
             y : ship.y,
@@ -197,7 +253,9 @@ function shoot(e) {
             height : tileSize/2,
             used : false
         }
+        
         bulletArray.push(bullet);
+        
     }
 }
 

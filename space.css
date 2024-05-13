@@ -1,7 +1,30 @@
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Comic Sans MS", cursive;
     text-align: center;
 }
+
+/* CSS to position the hearts image */
+#lives {
+    width: 170px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 35px; /* Adjust as needed to position vertically */
+    left: 422px; /* Adjust as needed to position horizontally */
+}
+
+/* CSS to crop the hearts image based on the number of lives */
+#lives.heart-1 {
+    background-position: 0 0; /* Show 1 heart */
+}
+
+#lives.heart-2 {
+    background-position: -32px 0; /* Show 2 hearts */
+}
+
+#lives.heart-3 {
+    background-position: -64px 0; /* Show 3 hearts */
+}
+
 
 #board {
     background-color: black;
