@@ -70,7 +70,7 @@ window.onload = function() {
     }
 
     alienImg = new Image();
-    alienImg.src = "./images/invader.png";
+    alienImg.src = "./images/flask-face-pixilart.png";
     createAliens();
 
     var heartsImage = new Image();
