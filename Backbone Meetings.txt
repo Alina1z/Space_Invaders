@@ -1,0 +1,35 @@
+Backbone Documentation Notes
+*The following notes are in most recent order. This means that the first meeting notes will be at the bottom of this document, and the most recent will be at the top.
+
+5.13 -- Tenth Meeting
+Working on updating sprites from its defaults and fixing the title screen. Working on the "game over" portion of the game as well. 
+
+5.12 -- Ninth Meeting
+Sound FX added when player shoots and enemy collision is triggered. Life system needs work, it's difficult to get working. 
+
+5.05 -- Eighth Meeting
+Updated repo with the fixed code. Many things have been changed/updated. Positive QA feedback. QA suggested life system. 
+
+5.04 -- Seventh Meeting
+QA feedback, mainly negative. Things aren't working well. Too many bugs.
+
+4.29 -- Sixth Meeting
+Checked up on graphics team, really great progress. Will focus on implementing them at a later date, when the game is functional. The graphics are in the repository. Might do a gif for the starting screen, but we need to learn how to get something like that working.
+
+3.28 -- Fifth Meeting
+Working on bugs. Sometimes the player doesn't move. Currently using A and D keys. 
+Currently using placeholder HTML for visual representation. Will confer with graphics team at a later date.
+
+3.05 -- Fourth Meeting
+Unanimously decided that it is best to split the roles amongst ourselves. One of us will work on the bomb functions, another on sound FX, game over mechanics, and player interaction such as collision. 
+
+3.01 -- Third Meeting
+Gearing up to code. Members are steadily learning JS and its role in creating the game.
+
+2.14.24 -- Second Meeting
+Got an idea of how the game works and discussion of how we can translate that into a college setting. The invaders are faculty, the player would probably be something representing a student.
+
+2.08.24 -- First Meeting
+General brainstorming. Majority of us have little experience in JS and therefore have to learn how it works. 
+Suggested idea by Haad to split the game up into individual components, a divide-and-conquer style. 
+Play Space Invaders to get an idea of how the game operates.
