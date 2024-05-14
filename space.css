@@ -27,5 +27,23 @@ body {
 
 
 #board {
-    background-color: black;
+    background-color: antiquewhite;
+    background-image: url("./images/coverClassroom.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 550px 550px;
 }
+
+.startScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: antiquewhite;
+    z-index: 200;
+    text-align: center;
+    line-height: 90vh;
+}
+
